@@ -1,0 +1,46 @@
+---
+title: V. Provopoulos
+name: Vasileios Provopoulos
+job: Student, Avid Linux User
+email: p18prov@ionio.gr
+url:
+  surl: git.io/p18prov
+  lurl: https://github.com/provopoulos
+tel: 2661087760
+
+profile:
+  desc: I am an undergraduate student from the Ionian University seeking to leverage strong skills and expertise in software engineering. I have experience working as part of a team and I used the advice passed on by my supervisors to mentor struggling individuals.
+
+projects:
+  - first:
+    title: Python-CLI launcher for MMORPG
+    subd: Hobby project, 2020 - Present
+    desc: A command-line application written in Python that utilizes the game's public API to log in to game on Linux distributions. Accounts protected with two-factor authentication are supported.
+  - second:
+    title: Collaborative development of CSCW website
+    subd: Mobile and Social Media course, 2020
+    desc: An alternative (unofficial) website written in HTML, CSS & JS and hosted on Github for the Department of Informatics.
+  - third:
+    title: Airlines Reservation System
+    subd: Databases I course, 2020
+    desc: A reservation system based on Airlines requirements with schematics in UML and a GUI application written in Python with PYQT5 framework.
+
+skills:
+- Python
+- C
+- PyQt5
+- MySQL
+- Java
+- Git
+- Jekyll
+
+education:
+  - uni:
+    name: Ionian University
+    subd: Undergraduate Student, 2018 - Present
+    desc: Faculty of Information Science & Informatics<br>IT studies @ Department of Informatics
+
+languages:
+- English (ECPE)
+- French (DELF A1)
+- Greek (Native)
