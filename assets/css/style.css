@@ -114,7 +114,7 @@ p
 	color: #003152;
 }
 
-.print-button
+.printdesc
 {
 	cursor: pointer;
 }
@@ -279,7 +279,7 @@ section:last-child
 		width: 100%;
 	}
 
-	.print-button
+	#printli
 	{
 		display: none;
 	}
