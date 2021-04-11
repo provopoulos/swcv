@@ -114,6 +114,11 @@ p
 	color: #003152;
 }
 
+.printdesc
+{
+	cursor: pointer;
+}
+
 section
 {
 	border-top: 1px solid #dedede;
@@ -273,6 +278,17 @@ section:last-child
 	{
 		width: 100%;
 	}
+
+	#printli
+	{
+		display: none;
+	}
+}
+
+@page
+{
+	size: auto;
+	margin: 0;
 }
 
 @-webkit-keyframes reset

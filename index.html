@@ -10,116 +10,123 @@
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300" rel="stylesheet" type="text/css">
 		<title>[CV]: {{site.data.details.title}}</title>
 	</head>
-<body id="top">
-<div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="https://live.staticflickr.com/65535/50996760141_14e8d7ba4a_q.jpg" alt="{{site.data.details.name}}"/>
-		</div>
-
-		<div id="name">
-			<h1 class="quickFade delayTwo">{{site.data.details.name}}</h1>
-			<h2 class="quickFade delayThree">{{site.data.details.job}}</h2>
-		</div>
-
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li>e: <a href="mailto:{{site.data.details.email}}" target="_blank">{{site.data.details.email}}</a></li>
-				<li>w: <a href="{{site.data.details.url.lurl}}">{{site.data.details.url.surl}}</a></li>
-				<li>m: <a href="tel:{{site.data.details.tel}}" target="_blank">{{site.data.details.tel}}</a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-
-	<div id="mainArea" class="quickFade delayFive">
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Profile</h1>
+	<script>
+		const printPage = () =>
+		{
+			window.print()
+		}
+	</script>
+	<body id="top">
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="https://live.staticflickr.com/65535/50996760141_14e8d7ba4a_q.jpg" alt="{{site.data.details.name}}"/>
 				</div>
 
-				<div class="sectionContent">
-					<p>{{site.data.details.profile.desc}}</p>
+				<div id="name">
+					<h1 class="quickFade delayTwo">{{site.data.details.name}}</h1>
+					<h2 class="quickFade delayThree">{{site.data.details.job}}</h2>
 				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>Projects</h1>
+				<div id="contactDetails" class="quickFade delayFour">
+					<ul>
+						<li>e: <a href="mailto:{{site.data.details.email}}" target="_blank">{{site.data.details.email}}</a></li>
+						<li>w: <a href="{{site.data.details.url.lurl}}">{{site.data.details.url.surl}}</a></li>
+						<li>m: <a href="tel:{{site.data.details.tel}}" target="_blank">{{site.data.details.tel}}</a></li>
+						<li id="printli">d: <a class="printdesc" onclick="printPage();">Save & Print</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
 			</div>
 
-			<div class="sectionContent">
-				<article>
-					<h2>{{site.data.details.projects[0].title}}</h2>
-					<p class="subDetails">{{site.data.details.projects[0].subd}}</p>
-					<p>{{site.data.details.projects[0].desc}}</p>
-				</article>
+			<div id="mainArea" class="quickFade delayFive">
+				<section>
+					<article>
+						<div class="sectionTitle">
+							<h1>Profile</h1>
+						</div>
 
-				<article>
-					<h2>{{site.data.details.projects[1].title}}</h2>
-					<p class="subDetails">{{site.data.details.projects[1].subd}}</p>
-					<p>{{site.data.details.projects[1].desc}}</p>
-				</article>
+						<div class="sectionContent">
+							<p>{{site.data.details.profile.desc}}</p>
+						</div>
+					</article>
+					<div class="clear"></div>
+				</section>
 
-				<article>
-					<h2>{{site.data.details.projects[2].title}}</h2>
-					<p class="subDetails">{{site.data.details.projects[2].subd}}</p>
-					<p>{{site.data.details.projects[2].desc}}</p>
-				</article>
+				<section>
+					<div class="sectionTitle">
+						<h1>Projects</h1>
+					</div>
+
+					<div class="sectionContent">
+						<article>
+							<h2>{{site.data.details.projects[0].title}}</h2>
+							<p class="subDetails">{{site.data.details.projects[0].subd}}</p>
+							<p>{{site.data.details.projects[0].desc}}</p>
+						</article>
+
+						<article>
+							<h2>{{site.data.details.projects[1].title}}</h2>
+							<p class="subDetails">{{site.data.details.projects[1].subd}}</p>
+							<p>{{site.data.details.projects[1].desc}}</p>
+						</article>
+
+						<article>
+							<h2>{{site.data.details.projects[2].title}}</h2>
+							<p class="subDetails">{{site.data.details.projects[2].subd}}</p>
+							<p>{{site.data.details.projects[2].desc}}</p>
+						</article>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Technical Skills</h1>
+					</div>
+
+					<div class="sectionContent">
+						<ul class="keySkills">
+							{% for skill in {{site.data.details.skills}} %}
+								<li>{{skill}}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Education</h1>
+					</div>
+
+					<div class="sectionContent">
+						<article>
+							<h2>{{site.data.details.education[0].name}}</h2>
+							<p class="subDetails">{{site.data.details.education[0].subd}}</p>
+							<p>{{site.data.details.education[0].desc}}</p>
+						</article>
+
+					</div>
+					<div class="clear"></div>
+				</section>
+
+				<section>
+					<div class="sectionTitle">
+						<h1>Languages</h1>
+					</div>
+
+					<div class="sectionContent">
+						<ul class="keySkills">
+							{% for language in {{site.data.details.languages}} %}
+								<li>{{language}}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</section>
+
 			</div>
-			<div class="clear"></div>
-		</section>
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Technical Skills</h1>
-			</div>
-
-			<div class="sectionContent">
-				<ul class="keySkills">
-					{% for skill in {{site.data.details.skills}} %}
-						<li>{{skill}}</li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-
-			<div class="sectionContent">
-				<article>
-					<h2>{{site.data.details.education[0].name}}</h2>
-					<p class="subDetails">{{site.data.details.education[0].subd}}</p>
-					<p>{{site.data.details.education[0].desc}}</p>
-				</article>
-
-			</div>
-			<div class="clear"></div>
-		</section>
-
-		<section>
-			<div class="sectionTitle">
-				<h1>Languages</h1>
-			</div>
-
-			<div class="sectionContent">
-				<ul class="keySkills">
-					{% for language in {{site.data.details.languages}} %}
-						<li>{{language}}</li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
-
-	</div>
-</div>
-</body>
+		</div>
+	</body>
 </html>
