@@ -14,7 +14,7 @@ profile:
 projects:
   - first:
     title: Python-CLI launcher for MMORPG
-    subd: Hobby project, 2020 - Present
+    subd: Hobby project, 2019 - Present
     desc: A command-line application written in Python that utilizes the game's public API to log in to game on Linux distributions. Accounts protected with two-factor authentication are supported.
   - second:
     title: Collaborative development of CSCW website
