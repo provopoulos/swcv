@@ -274,7 +274,7 @@ section:last-child
 
 @media print
 {
-	#cv
+	body
 	{
 		width: 100%;
 	}
