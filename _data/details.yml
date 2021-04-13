@@ -6,6 +6,7 @@ email: p18prov@ionio.gr
 url:
   surl: git.io/p18prov
   lurl: https://github.com/provopoulos
+  doc: https://raw.githubusercontent.com/provopoulos/swcv/gh-pages/output/curriculum-vitae.pdf
 tel: 2661087760
 
 profile:
@@ -14,7 +15,7 @@ profile:
 projects:
   - first:
     title: Python-CLI launcher for MMORPG
-    subd: Hobby project, 2019 - Present
+    subd: Hobby project, 2020 - Present
     desc: A command-line application written in Python that utilizes the game's public API to log in to game on Linux distributions. Accounts protected with two-factor authentication are supported.
   - second:
     title: Collaborative development of CSCW website
